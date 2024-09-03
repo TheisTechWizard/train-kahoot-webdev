@@ -6,5 +6,7 @@
 body {
     width: 430px;
     height: 932px;
+    max-height: 932px;
     margin: auto;
+    overflow: hidden;
 }
