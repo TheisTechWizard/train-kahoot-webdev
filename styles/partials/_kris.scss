@@ -21,7 +21,7 @@
 main {
     #loginBox {
         display: grid;
-        margin: 15%;
+        margin: 35% 15% 15% 15%;
         row-gap: 25%;
 
         button, a {
@@ -36,6 +36,20 @@ main {
     }
 
     #toLeaderboard {
-        
+        margin-top: 50%;
+        margin-left: 90%;
+
+        i {
+            scale: 2;
+            color: gold;
+        }
+    }
+}
+
+.joinHost {
+    margin: 15%;
+    button {
+        width: 50%;
+        margin: 5% 25%;
     }
 }
