@@ -1,0 +1,41 @@
+#headerOne {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    h1 {
+        grid-column: 2/span 10;
+        margin: auto;
+    }
+
+    i {
+        grid-column: 12;
+        
+        &::before {
+            scale: 2;
+            margin-top: 50%;
+            display: block;
+        }
+    }
+}
+
+main {
+    #loginBox {
+        display: grid;
+        margin: 15%;
+        row-gap: 25%;
+
+        button, a {
+            width: 50%;
+            margin: auto;
+        }
+
+        a {
+            text-align: center;
+            font-size: small;
+        }
+    }
+
+    #toLeaderboard {
+        
+    }
+}
