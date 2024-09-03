@@ -1,0 +1,60 @@
+.testCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+
+  .gameCodeCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .codeInputGroup {
+        display: flex;
+        gap: 10px;
+
+        .input-box {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 5px;
+            border: 2px solid #333;
+            // background-color: white;
+        
+            &:focus {
+                outline: none;
+                border-color: #007BFF;
+            }
+        }
+    }
+    
+    .gameTimer {
+        font-size: 24px;
+        font-weight: bold;
+        color: #BC112A;
+    }
+
+    .trainTL {
+        width: 100%;
+        height: 5px;
+        background-color: gray; // Pink color
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        .progressbar {
+            height: 100%;
+            width: 30%;
+            background-color: #001C38;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 1s linear;
+        }
+    } 
+}  
+}
+
+

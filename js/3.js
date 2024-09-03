@@ -25,6 +25,54 @@ const questions = [
             { text: "William Shakespeare", correct: true },
             { text: "Mark Twain", correct: false }
         ]
+    },
+
+    {
+        question: "What is the largest ocean on Earth?",
+        answers: [
+            { text: "Atlantic Ocean", correct: false },
+            { text: "Indian Ocean", correct: false },
+            { text: "Arctic Ocean", correct: false },
+            { text: "Pacific Ocean", correct: true }
+        ]
+    },
+
+    {
+        question: "Who painted the Mona Lisa?",
+        answers: [
+        { text: "Vincent van Gogh", correct: false },
+        { text: "Leonardo da Vinci", correct: true },
+        { text: "Pablo Picasso", correct: false },
+        { text: "Claude Monet", correct: false }
+    ]
+    }, 
+    {
+        question: "What is the chemical symbol for gold?",
+        answers: [
+        { text: "Ag", correct: false },
+        { text: "Au", correct: true },
+        { text: "Pb", correct: false },
+        { text: "Fe", correct: false }
+    ]
+    }, 
+    {
+         question: "Which country won the FIFA World Cup in 2018?",
+        answers: [
+        { text: "Germany", correct: false },
+        { text: "Brazil", correct: false },
+        { text: "France", correct: true },
+        { text: "Argentina", correct: false }
+    ]
+    },
+
+    {
+        question: "What is the square root of 64?",
+        answers: [
+        { text: "6", correct: false },
+        { text: "8", correct: true },
+        { text: "10", correct: false },
+        { text: "12", correct: false }
+    ]
     }
 ];
 
@@ -89,7 +137,7 @@ function selectAnswer(e) {
         setStatusClass(button, button.dataset.correct);
     });
     if (correct) {
-        score++;
+        score+=250;
         scoreElement.innerText = `Score: ${score}`;
     }
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
