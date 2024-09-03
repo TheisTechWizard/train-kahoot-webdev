@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #001C38;
 
     #LB_box{
         width: 100%;
@@ -16,6 +15,11 @@
         flex-direction: column;
         align-items: center;
     
+        h1{
+            font-size: 3rem;
+            color: #001C38;
+        }
+
         .LB_player{
             display: flex;
             flex-wrap: nowrap;
@@ -24,22 +28,23 @@
             align-items: center;
             text-align: center;
             font-size: 1rem;
-            color: white;
+            color: #001C38;
             margin-inline: 1rem;
             margin-block: .5rem;
             padding-block: 1rem;
     
-            border: 2px solid white;
-            border-radius: 4px;
-    
+            border: 2px solid #001C38;
+            border-radius: 5px;
+
             *{
                 margin: 0;
             }
     
-            &:first-child{
+            &:nth-child(2){
                 font-size: 2rem;
                 background-color: yellow;
-                color: #001C38;
+                color: #001C38; 
+                border: none;
     
                 animation: pulse .5s ease-in-out infinite alternate;
             }
@@ -60,7 +65,7 @@
 
         i{
             font-size: 4rem;
-            color: white;
+            color: #001C38;
         }
     }
 }
