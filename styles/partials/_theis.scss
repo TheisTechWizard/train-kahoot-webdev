@@ -19,6 +19,18 @@ $font-family: Arial, sans-serif;
     text-align: center;
     height: 100%;
 
+    .leaderboard {
+        display: flex;
+        flex-direction: column;
+        border-top: black solid;
+        border-bottom: black solid;
+
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 
 }
 
