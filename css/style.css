@@ -1,1 +1,1 @@
-body{width:430px;height:932px;margin:auto;color:#000}
+#headerOne{display:grid;grid-template-columns:repeat(12, 1fr)}#headerOne h1{grid-column:2/span 10;margin:auto}#headerOne i{grid-column:12}#headerOne i::before{scale:2;margin-top:50%;display:block}main #loginBox{display:grid;margin:15%;row-gap:25%}main #loginBox button,main #loginBox a{width:50%;margin:auto}main #loginBox a{text-align:center;font-size:small}body{width:430px;height:932px;margin:auto}
