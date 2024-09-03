@@ -1,0 +1,74 @@
+$primary-color: #007bff;
+$hover-color: #0056b3;
+$background-color: #f4f4f4;
+$container-bg-color: white;
+$container-padding: 20px;
+$container-border-radius: 10px;
+$container-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$btn-padding: 15px;
+$btn-font-size: 16px;
+$btn-border-radius: 5px;
+$grid-gap: 10px;
+$font-family: Arial, sans-serif;
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: $container-bg-color;
+    padding: $container-padding;
+    border-radius: $container-border-radius;
+    box-shadow: $container-box-shadow;
+    text-align: center;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $grid-gap;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    border-radius: $btn-border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+// Score container styling
+#score-container {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+// Status classes for correct and wrong answers
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
